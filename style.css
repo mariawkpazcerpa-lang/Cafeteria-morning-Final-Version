@@ -1,0 +1,417 @@
+
+:root{
+    --info: saddlebrown;
+    --warning: gold;
+    --error: firebrick;
+    --success: forestgreen;
+    --primary: #D9946C;
+    --secondary: #591202;
+    --palette3: #395059;
+    --palette4: #8C592B;
+    --palette5: #A86648;
+    --light: floralwhite;
+    --dark: black;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-principal:  "Viaoda Libre", serif;
+    --font-family-secundaria:  "Love Ya Like A Sister", cursive;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(fondocafemorning.png);
+    background-size: cover;
+    background-position: center;
+    background-color: floralwhite;
+    background-attachment: fixed;
+    place-items: center;
+}
+
+.Inicio{
+    background-image: url(header.png) ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 30em;
+    background-position: center;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px;
+    overflow: hidden;
+}
+
+h1{
+    font-family: var(--font-family-secundaria);
+    background-image: url(tiza_blanca_textura.png);
+    background-clip: text;
+    -webkit-background-clip: text; /* Compatibilidad para navegadores WebKit */
+    -webkit-text-fill-color: transparent; /* Hace el color del texto transparente para mostrar la textura */
+    color: black; /* Establece un color base para el texto */
+    font-size: 4.3em;
+    position: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.overlay{
+    background-image: url('unnamed.jpg');
+    background-position: center;
+    align-items: center;
+    display: inline-block;
+    height: auto;
+    border-style: groove;
+    border-color: #8C592B;
+    border-width: 10px;
+    padding: 5px 50px 5px 50px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay img{
+    width: 12em;
+    
+}
+
+h2{
+    font-family: var(--font-family-secundaria);
+    font-size: 3em;
+}
+h3{
+    font-family: var(--font-family-secundaria);
+    font-size: 2em;
+
+}
+.MENU {
+    position: fixed; 
+    top: 0;
+    left: 0;       
+    width: 100%;
+    height: 4em;   
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(hyperrealistic\ close.png);
+    background-size: cover;
+    border-style: outset;
+    border-color: antiquewhite;
+}
+
+.Flex-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    
+}
+.Flex-container button{
+    width: 3em;
+    border-style: outset;
+    border-color: antiquewhite;
+}
+.grid-item {
+    position: relative;
+    
+}
+section:first-of-type {
+    margin-top: 100px; 
+}
+.flex-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 350px);
+    gap: 15px;
+    white-space: nowrap;
+    top: 100%; 
+    right: 0;
+    z-index: 1001; 
+    
+}
+
+.MiMenu {
+    border-radius: 5%;
+    border-style: inset;
+    border-color: antiquewhite;
+    font-family: var(--font-family-principal);
+    color:antiquewhite;
+    font-size: 2.5em;
+    padding: 0.005em;
+    display: block;
+    cursor: pointer;  
+}
+
+.logo-conteiner {
+    width: 3em;
+    overflow: hidden;
+}
+.logo-conteiner img{
+    width: 100%;
+    filter: drop-shadow(0 3em 0 #FAEBD7 );
+    transform: translateY(-3em);
+}
+.flex-menu li {
+    border-radius: 5%;
+    list-style-type: none;
+    flex: 1;
+    border-style: double;
+    border-color: antiquewhite;
+    font-family: var(--font-family-principal);
+    background-image: url(hyperrealistic\ close.png);
+    color:antiquewhite;
+    width: 300px;
+    font-size: 2em;
+    padding: 5px;
+    
+}
+.flex-menu a{ color: antiquewhite;}
+
+section{
+       background-color: rgba(255, 250, 240, 0.7);
+       background-position: center;
+       text-align: center;
+       padding: 40px 20px 40px 20px;
+       justify-content: center
+    
+       
+}
+footer{
+    background-image: url(hyperrealistic\ close.png);
+    color: antiquewhite;
+    padding: 40px 50px 60px 50px;
+}
+p{
+    font-family: var(--font-family-principal);
+    font-size: 1.5em;
+}
+
+
+form {
+    font-family: var(--font-family-principal);
+    font-size: 1.3em; 
+}
+input{
+  font-size: 1.3em;
+  font-family: var(--font-family-principal);
+}
+
+textarea {
+  font-size: 1.2em;
+  font-family: var(--font-family-principal);
+
+}
+button{
+  font-size: 1.3em;
+  font-family: var(--font-family-secundaria);
+  font-style: italic;
+  background-image: url(hyperrealistic\ close.png);
+  color: antiquewhite;
+  border-style: outset;
+}
+
+
+.Contact a{color: var(--palette3);}
+
+.Products img{
+    border-style: double;
+    border-color: #591202;
+    overflow: hidden;
+    width: 15em; 
+    height: auto;   
+    align-content: center;
+    border-radius: 1em;
+}
+.producto-card{
+    border-style: double;
+    border-radius: 5px;
+    border-color: #8C592B;
+    width: 23em;
+    height: auto;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+}
+.ListaProductos{
+    display: flex;
+    gap: 0.7em;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+#carrito{
+
+  position: fixed;
+  top: 70px; /* altura del nav */
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.oculto {
+  display: none;
+}
+
+
+.producto h6{
+    font-size: 1.5em;
+}
+.producto p, .producto buttom{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.precio{
+    font-size: 1.4em;
+    font-weight: bold;
+
+}
+.Feedback{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-rows:  auto auto auto;
+    gap: 5px 20px;
+    padding: 20px;
+}
+.Feedback h2{
+    grid-row: 1;
+    grid-column: 1 / 3;
+    margin-bottom: 20px;
+}
+.Feedback h3{
+    grid-row: 2 ;
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.Feedbackimg {
+    grid-row:  2 / 4;
+    grid-column: 1;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+.Feedback form{
+    grid-row: 3 ;
+    grid-column: 2 / 3;
+    align-items: start;
+    margin-top: 0;
+}
+.Feedback img, .About img{
+    border-style: double;
+    border-color: #591202;
+    overflow: hidden;
+    width: 20em; 
+    height: auto;   
+    align-content: center;
+
+}
+.Feedback textarea,
+.Contact textarea{
+    text-align: center;
+    }
+.Contact{
+        padding: 20px 15px;
+    }
+.Contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 10px 10px;
+    font-size: 1.4em;
+    text-align: center; 
+    align-self: center;
+    align-items: center;
+    
+}
+/* ========================================================= */
+/* 🔑 MEDIA QUERY PARA PANTALLAS PEQUEÑAS (Móviles)          */
+/* ========================================================= */
+@media only screen and (max-width: 600px){
+    .Contact{
+        padding: 15px 10px;
+    }
+    .Contact form{
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px 10px;
+        font-size: 1.4em;
+    }
+    .Contact textarea{
+        max-width: 350px;
+    }
+    .Feedback{
+        padding: 15px 10px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto ;
+        gap: 15px;
+        align-content: center;
+        justify-items: center;
+    }
+    .Feedback h2{ 
+        grid-row: 1;
+    }
+    .Feedbackimg{
+       grid-row: 2 ;
+       grid-column: 1;
+       gap: 0.005em;
+       display: grid;
+       grid-template-rows: auto auto auto auto;
+       grid-template-columns: auto;
+       gap: 5px;
+       max-width: 350px;
+       font-size: 1.4em;
+    }
+    .Feedbackimg img{
+        width: 16em;
+
+    }
+    .Feedback h3{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .Feedback form{
+        grid-row: 4;
+        grid-column: 1;
+        max-width: 280px;
+        padding: 15px 10px;
+        gap: 0.5em;
+        align-self: center;
+        align-items: center;
+    }
+    .Feedback textarea{
+        text-align: center;
+        max-width: 280px;
+    }
+
+    .Inicio{
+    background-image: url(header.png) ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px;
+    overflow: hidden;
+    }
+    .MENU {
+        height: 3em; 
+        padding: 0 10px;
+    }
+
+}

@@ -1,0 +1,112 @@
+!DOCTYPE html>
+ <HTml lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <title>
+            Cafetería - Entrega Final
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-chubby/css/uicons-thin-chubby.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    </head>
+    <body>
+        
+        <nav class="MENU">
+            <div class="logo-conteiner"> <img src="logo-morning.png" alt="Morning-logo"></div>
+            <div class="Flex-container">
+                <div class="Flex-container">
+                <div class="Flex-container">
+                <button id="botonCarrito"><i class="fi fi-tr-cart-arrow-down"></i></button>
+                <span id="contadorCarrito">0</span>
+                </div>
+                <details class="grid-item">
+                <summary class="MiMenu" disabled> <i class="fi fi-tc-menu-burger"></i> Menú</summary>
+                <ul class="flex-menu">
+                    <li value="Home"><a href="index.html"> Home</a> </li>
+                    <li value="About"><a href="index.html#About">Sobre nosotros</a> </li>
+                    <li value="Products"><a href="productos.html">Productos</a> </li>
+                    <li value="Feedback"><a href="reseñas.html">Opiniones</a> </li>
+                    <li value="Contact"><a href="contacto.html">Contacto</a> </li>
+                </ul>  
+            </details>
+            </div> 
+         </nav>
+         <aside>
+            <div id="carrito" class="oculto">
+                <h3>Carrito de Compras</h3>
+                <table id="tablaCarrito">
+                    <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody id="listaCarrito"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td id="totalCarrito">$0</td>
+                        </tr>
+                    </tfoot>
+                <button id="vaciarCarrito">Vaciar Carrito</button>
+                </table>
+            </div>
+         </aside>
+        <header class="Inicio" id="Home">
+            <div class="overlay">
+            <h1>~Café Morning~</h1>
+            <img src="logo header.png" class="logo-header">
+
+            </div>
+        </header>
+        
+        <main>
+            <section id="Feedback" class="Feedback">
+                <h2>Testimonios</h2>
+                <div class="Feedbackimg">
+                <img src="Opiniones1.jpg">
+                <img src="Opiniones2.jpg">
+                <img src="Opiniones3.jpg">
+                <img src="Opiniones4.jpg">
+                </div>
+                <h3>Tu Testimonio</h3>
+                <form action="https://formspree.io/f/xldpnwrq" method="post" autocomplete="on">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre"> <br>
+                    <label for="email">Email:  </label>
+                    <input type="email" id="email" name="email"><br>
+                    <label><u> Clasificación</u>: </label>
+                    <div class="estrellas">
+                        <input type="radio" id="estrella5" name="calificacion" value="1">
+                        <label for="estrella5">★</label>
+
+                        <input type="radio" id="estrella4" name="calificacion" value="2">
+                        <label for="estrella4">★</label>
+
+                        <input type="radio" id="estrella3" name="calificacion" value="3">
+                        <label for="estrella3">★</label>
+
+                        <input type="radio" id="estrella2" name="calificacion" value="4">
+                        <label for="estrella2">★</label>
+
+                        <input type="radio" id="estrella1" name="calificacion" value="5">
+                        <label for="estrella1">★</label>
+                    </div>
+                    <textarea  name="opinion" rows="3" cols="50" maxlength="150" placeholder="Como fue tu experiencia: "></textarea><br>
+                    <button>Enviar</button>
+                </form>  
+            </section>
+        </main>
+        <footer>
+
+                <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+ </HTml>

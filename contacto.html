@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ <HTml lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <title>
+            Cafetería - Entrega Final
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-chubby/css/uicons-thin-chubby.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    </head>
+    <body>
+        
+        <nav class="MENU">
+            <div class="logo-conteiner"> <img src="logo-morning.png" alt="Morning-logo"></div>
+            <div class="Flex-container">
+                <div class="Flex-container">
+                <div class="Flex-container">
+                <button id="botonCarrito"><i class="fi fi-tr-cart-arrow-down"></i></button>
+                <span id="contadorCarrito">0</span>
+                </div>
+                <details class="grid-item">
+                <summary class="MiMenu" disabled> <i class="fi fi-tc-menu-burger"></i> Menú</summary>
+                <ul class="flex-menu">
+                    <li value="Home"><a href="index.html"> Home</a> </li>
+                    <li value="About"><a href="index.html#About">Sobre nosotros</a> </li>
+                    <li value="Products"><a href="productos.html">Productos</a> </li>
+                    <li value="Feedback"><a href="reseñas.html">Opiniones</a> </li>
+                    <li value="Contact"><a href="contacto.html">Contacto</a> </li>
+                </ul>  
+            </details>
+            </div> 
+         </nav>
+         <aside>
+            <div id="carrito" class="oculto">
+                <h3>Carrito de Compras</h3>
+                <table id="tablaCarrito">
+                    <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody id="listaCarrito"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td id="totalCarrito">$0</td>
+                        </tr>
+                    </tfoot>
+                <button id="vaciarCarrito">Vaciar Carrito</button>
+                </table>
+            </div>
+         </aside>
+        <header class="Inicio" id="Home">
+            <div class="overlay">
+            <h1>~Café Morning~</h1>
+            <img src="logo header.png" class="logo-header">
+
+            </div>
+        </header>
+
+        <main>
+            <section id="Contact" class="Contact">
+                <h2>Contacto</h2>
+                <p>Email: <a href="mariawkpazcerpa@gmail.com">mariawkpazcerpa@gmail.com</a></p>
+                <p>Telefono: <a href="https://api.whatsapp.com/send?phone=5491127207455">+54 9 11 2720 7455</a></p>
+                <p>Dirección: <a href="https://maps.app.goo.gl/e5fnQfRaZ4icDNbF8">Av. Rosales 1234, Floresta, CABA</a> Lun a Vie 10 a 20 hs</p> <!--Dirección ficticia-->
+                <br>
+                <h3><u>Mensaje</u></h3>
+                <form action="https://formspree.io/f/xeolbanr" method="post" autocomplete="on">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="email">Email:  </label>
+                    <input type="email" id="email" name="email">
+                    <textarea  name="mensaje" rows="10" cols="50" maxlength="500" placeholder="Escribe tu consulta."></textarea><br>
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+
+            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+ </HTml>

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Dúo de Cupcakes Artesanales",
+        "imagen": "productos.png",
+        "precio": 3000,
+        "descripcion": "Dos deliciosos cupcakes: uno de chocolate con frosting de café o caramelo y chispas, y otro de vainilla con vibrante frosting de frutos rojos. Perfectos para un dulce capricho a la hora del desayuno."
+    },
+    {
+        "id": 2,
+        "nombre": "Café en Grano 'Morning Blend' y Latte",
+        "imagen": "productos1.png",
+        "precio": 8000,
+        "descripcion": "Disfruta de la calidad en casa. Incluye una bolsa de nuestro exclusivo blend de café tostado 'Morning Blend' y una taza de nuestro cremoso Latte, decorado con arte. (Ideal para ofrecer como un pack o café para llevar + bolsa de café)."
+    },
+    {
+        "id": 3,
+        "nombre": "Tazas de Café Reutilizables Ecológicas",
+        "imagen": "productos2.png",
+        "precio": 10000,
+        "descripcion": "Tazas de café reutilizables, perfectas para llevar. Diseño elegante de bambú o material sostenible con una banda de agarre personalizada. Contribuye al planeta con estilo."
+    },
+    {
+        "id": 4,
+        "nombre": "Cesta de Galletas con Chispas de Chocolate",
+        "imagen": "productos3.png",
+        "precio": 15000,
+        "descripcion": "Galletas recién horneadas, suaves por dentro y ligeramente crujientes por fuera, cargadas con chispas de chocolate.Se entregan en una cesta con una bolsa de nuestro café tostado."
+    },
+    {
+        "id": 5,
+        "nombre": "Porción de Torta de Zanahoria Clásica",
+        "imagen": "productos4.png",
+        "precio": 5000,
+        "descripcion": "Esponjosa y húmeda torta de zanahoria con especias, cubierta con un cremoso frosting de queso. Un clásico reconfortante con un toque crujiente en la cima."
+    },
+    {
+        "id": 6,
+        "nombre": "Iced Latte Refrescante",
+        "imagen": "productos5.png",
+        "precio": 5000,
+        "descripcion": "Bebida fría a base de espresso y leche, servida con hielo. Nada como un latte helado para iniciar el día. La combinación perfecta de dulzura y cafeína para refrescar tu día."
+    }
+]

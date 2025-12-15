@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ <HTml lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <title>
+            Cafetería - Entrega Final
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-chubby/css/uicons-thin-chubby.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    </head>
+    <body>
+        <nav class="MENU">
+            <div class="logo-conteiner"> <img src="logo-morning.png" alt="Morning-logo"></div>
+            <div class="Flex-container">
+                <div class="Flex-container">
+                <button id="botonCarrito"><i class="fi fi-tr-cart-arrow-down"></i></button>
+                <span id="contadorCarrito">0</span>
+                </div>
+                <details class="grid-item">
+                <summary class="MiMenu" disabled> <i class="fi fi-tc-menu-burger"></i> Menú</summary>
+                <ul class="flex-menu">
+                    <li value="Home"><a href="#Home"> Home</a> </li>
+                    <li value="About"><a href="#About">Sobre nosotros</a> </li>
+                    <li value="Products"><a href="productos.html">Productos</a> </li>
+                    <li value="Feedback"><a href="reseñas.html">Opiniones</a> </li>
+                    <li value="Contact"><a href="contacto.html">Contacto</a> </li>
+                </ul>  
+            </details>
+            </div> 
+         </nav>
+         <aside>
+                    <div id="carrito" class="oculto">
+                    <h3>Carrito de Compras</h3>
+                    <table id="tablaCarrito"></table>
+                    <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody id="listaCarrito"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td id="totalCarrito">$0</td>
+                        </tr>
+                    </tfoot>
+                    <button id="vaciarCarrito">Vaciar Carrito</button>
+                    </div>
+                </aside>
+        <header class="Inicio" id="Home">
+            <div class="overlay">
+            <h1>~Café Morning~</h1>
+            <img src="logo header.png" class="logo-header">
+
+            </div>
+        </header>
+       
+        <main>
+            <section id="About" class="About">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    En Morning creemos que cada mañana merece comenzar con una buena taza de café y un momento de calma. 
+                    Somos una cafetería nacida con la idea de ofrecer un espacio cálido, donde el aroma del café recién molido se combina con la frescura de nuestras pastelerías y el trato cercano de nuestro equipo.
+                </p>
+                <p>
+                    Nos apasiona seleccionar granos de calidad y preparar cada bebida con dedicación, 
+                    para que disfrutes no solo de un café, sino de una experiencia que acompañe tus charlas, tus lecturas o simplemente tu tiempo de descanso.
+                </p>
+                <p>
+                    En Morning queremos que cada visita se sienta como un respiro en medio de la rutina, un rincón donde empezar el día con energía o regalarte una pausa especial.
+                </p>       
+                <h3>Nuestro local</h3>
+                <img src="sobre-nosotros.png">
+                <img src="sobre-nosotros1.png"><br>
+                <img src="sobre-nosotros2.png">
+                <img src="sobre-nosotros3.png">
+            </section>
+        </main>
+        <footer>
+
+            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+ </HTml>
