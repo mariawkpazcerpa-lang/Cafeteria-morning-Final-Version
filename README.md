@@ -80,7 +80,8 @@ Enlaces
 
 Repositorio GitHub: https://github.com/tu-usuario/Cafeteria-morning-Final-Version
 
-Proyecto Online: https://tu-proyecto.netlify.app
+Proyecto Online: 
+https://mariawkpazcerpa-lang.github.io/Cafeteria-morning-Final-Version/
 
 Notas
 
