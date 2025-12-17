@@ -29,6 +29,7 @@ body{
     background-color: floralwhite;
     background-attachment: fixed;
     place-items: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.6); 
 }
 
 .Inicio{
@@ -96,7 +97,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(hyperrealistic\ close.png);
+    background-image: url('hyperrealistic\ close.png');
     background-size: cover;
     border-style: outset;
     border-color: antiquewhite;
@@ -124,7 +125,6 @@ section:first-of-type {
     position: absolute;
     display: flex;
     flex-direction: column;
-    grid-template-columns: repeat(4, 350px);
     gap: 15px;
     white-space: nowrap;
     top: 100%; 
@@ -175,10 +175,9 @@ section{
        background-position: center;
        text-align: center;
        padding: 40px 20px 40px 20px;
-       justify-content: center
-    
-       
+       justify-content: center;  
 }
+
 footer{
     background-image: url(hyperrealistic\ close.png);
     color: antiquewhite;
@@ -234,7 +233,8 @@ button{
     padding: 0.5em 0.5em 0.5em 0.5em;
     text-align: center;
 }
-.ListaProductos{
+
+.Products ul{
     display: flex;
     gap: 0.7em;
     align-items: center;
@@ -271,7 +271,8 @@ button{
     text-align: center; /* centrar número dentro de la casilla */
     padding: 3px; /* opcional, espacio dentro de la casilla */
     border-radius: 5px; /* bordes redondeados */}
-#tablaCarrito button {
+
+    #tablaCarrito button {
     font-size: small;
 }
 .total {
@@ -289,7 +290,7 @@ button{
 .producto h6{
     font-size: 1.5em;
 }
-.producto p, .producto buttom{
+.producto p, .producto button{
     font-size: 1.3em;
     margin-bottom: 20px;
 }
@@ -435,9 +436,18 @@ button{
     overflow: hidden;
     }
     .MENU {
-    height: 30 px; 
-    padding: 0 10px;
+        height: 30 px; 
+        padding: 0 10px;
     }
     .MENU button, .MENU summary {
         height: 15 px;
+        font-size: 10 px;
+     }
+
+    #carrito{
+        width: 90%;
+        right: 5%;
+    }
+
+
 }
