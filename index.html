@@ -20,7 +20,7 @@
             <div class="Flex-container">
                 <div class="Flex-container">
                 <button id="botonCarrito"><i class="fi fi-tr-cart-arrow-down"></i></button>
-                <span id="contador-carrito" class="badge">0</span>
+                 <span id="contador-carrito" class="badge">0</span>
                 </div>
                 <details class="grid-item">
                 <summary class="MiMenu" disabled> <i class="fi fi-tc-menu-burger"></i> Menú</summary>
@@ -35,10 +35,9 @@
             </div> 
          </nav>
          <aside>
-                    <div id="carrito" class="oculto">
-                    <h3>Carrito de Compras</h3>
-                    
-                    <table id="tablaCarrito"></table>
+            <div id="carrito" class="oculto">
+                <h3>Carrito de Compras</h3>
+                <table id="tablaCarrito">
                     <thead>
                     <tr>
                         <th>Producto</th>
@@ -52,9 +51,10 @@
                             <td id="totalCarrito" class="total">$0</td>
                         </tr>
                     </tfoot>
-                    <button id="vaciarCarrito">Vaciar Carrito</button>
-                    </div>
-                </aside>
+                <button id="vaciarCarrito">Vaciar Carrito</button>
+                </table>
+            </div>
+         </aside>
         <header class="Inicio" id="Home">
             <div class="overlay">
             <h1>~Café Morning~</h1>
