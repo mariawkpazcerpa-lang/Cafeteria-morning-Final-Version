@@ -22,7 +22,7 @@
                 <div class="Flex-container">
                 <div class="Flex-container">
                 <button id="botonCarrito"><i class="fi fi-tr-cart-arrow-down"></i></button>
-                <span id="contadorCarrito">0</span>
+                <span id="contador-carrito" class="badge">0</span>
                 </div>
                 <details class="grid-item">
                 <summary class="MiMenu" disabled> <i class="fi fi-tc-menu-burger"></i> Menú</summary>
@@ -49,8 +49,8 @@
                     <tbody id="listaCarrito"></tbody>
                     <tfoot>
                         <tr>
-                            <td>Total</td>
-                            <td id="totalCarrito">$0</td>
+                            <td class="total">Total</td>
+                            <td id="totalCarrito" class="total">$0</td>
                         </tr>
                     </tfoot>
                 <button id="vaciarCarrito">Vaciar Carrito</button>
@@ -75,9 +75,9 @@
                 <h3><u>Mensaje</u></h3>
                 <form action="https://formspree.io/f/xeolbanr" method="post" autocomplete="on">
                     <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre-contacto" name="nombre">
                     <label for="email">Email:  </label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email-contacto" name="email">
                     <textarea  name="mensaje" rows="10" cols="50" maxlength="500" placeholder="Escribe tu consulta."></textarea><br>
                     <button>Enviar</button>
                 </form>
