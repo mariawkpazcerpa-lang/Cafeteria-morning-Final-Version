@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
  <HTml lang="en">
     <head>
         <meta charset="UTF-8">
@@ -22,7 +22,7 @@
                 <div class="Flex-container">
                 <div class="Flex-container">
                 <button id="botonCarrito"><i class="fi fi-tr-cart-arrow-down"></i></button>
-                <span id="contadorCarrito">0</span>
+                 <span id="contador-carrito" class="badge">0</span>
                 </div>
                 <details class="grid-item">
                 <summary class="MiMenu" disabled> <i class="fi fi-tc-menu-burger"></i> Menú</summary>
@@ -39,6 +39,7 @@
          <aside>
             <div id="carrito" class="oculto">
                 <h3>Carrito de Compras</h3>
+                
                 <table id="tablaCarrito">
                     <thead>
                     <tr>
@@ -49,8 +50,8 @@
                     <tbody id="listaCarrito"></tbody>
                     <tfoot>
                         <tr>
-                            <td>Total</td>
-                            <td id="totalCarrito">$0</td>
+                            <td class="total">Total</td>
+                            <td id="totalCarrito" class="total">$0</td>
                         </tr>
                     </tfoot>
                 <button id="vaciarCarrito">Vaciar Carrito</button>
@@ -69,17 +70,17 @@
             <section id="Feedback" class="Feedback">
                 <h2>Testimonios</h2>
                 <div class="Feedbackimg">
-                <img src="Opiniones1.jpg">
-                <img src="Opiniones2.jpg">
-                <img src="Opiniones3.jpg">
-                <img src="Opiniones4.jpg">
+                <img src="Opiniones1.jpg" alt="Me-encanta-Morning-SofiM">
+                <img src="Opiniones2.jpg" alt="Los-pasteles-son-un-sueno-MartinR">
+                <img src="Opiniones3.jpg" alt="Es-el-lugar-perfecto-JulianT">
+                <img src="Opiniones4.jpg" alt="No-puedo-resistirme-sus-cappucinos-ValentinaS">
                 </div>
                 <h3>Tu Testimonio</h3>
                 <form action="https://formspree.io/f/xldpnwrq" method="post" autocomplete="on">
                     <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre"> <br>
+                    <input type="text" id="nombre-resena" name="nombre"> <br>
                     <label for="email">Email:  </label>
-                    <input type="email" id="email" name="email"><br>
+                    <input type="email" id="email-resena" name="email"><br>
                     <label><u> Clasificación</u>: </label>
                     <div class="estrellas">
                         <input type="radio" id="estrella5" name="calificacion" value="1">
