@@ -518,6 +518,9 @@ button{
         width: 90%;
         right: 5%;
     }
+    .Products{
+        max-width: 100%;
+    }
     .carrousel {
       position: relative;
       display: flex;
