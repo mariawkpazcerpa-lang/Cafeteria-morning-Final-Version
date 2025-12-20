@@ -1,5 +1,3 @@
-alert("script cargado");
-
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let productos = []; 
@@ -20,6 +18,7 @@ fetch('productos.json')
     data.forEach(producto => {
       const productoCard = ` 
         <li>
+        <div class="item">
           <div class="producto-card">
             <img src="${producto.imagen}" alt="${producto.nombre}">
             <h3>${producto.nombre}</h3>
@@ -27,16 +26,55 @@ fetch('productos.json')
             <p>${producto.precio}</p>
             <button class="btn-agregar-carrito" data-id="${producto.id}">Añadir al carrito</button>
           </div>
+        </div>
         </li>
       `;
       contenedor.innerHTML += productoCard;
     });
 
+      const items = document.querySelectorAll('.item');
+      const total = items.length; //6
+      let currentIndex = 0;
+
+      function getIndex(index) {
+        return(index + total) % total;
+      }
+
+      function renderCarousel() {
+        items.forEach(item=> {
+          item.className = 'item';
+        });
+
+        const center = getIndex(currentIndex);
+        const left = getIndex(currentIndex -1);
+        const right = getIndex(currentIndex +1);
+        const farLeft = getIndex(currentIndex -2);
+        const farRight = getIndex(currentIndex +2);
+        
+        items[center].classList.add('center');
+        items[left].classList.add('left');
+        items[right].classList.add('right');
+        items[farLeft].classList.add('far');
+        items[farRight].classList.add('far');
+        
+      }
+      console.log('items:', items);
+      console.log('items.length:', items.length);
+      renderCarousel();
+
+      document.getElementById('next').addEventListener('click',()=> {
+        currentIndex++;
+        renderCarousel();
+      });
+
+      document.getElementById('prev').addEventListener('click',()=> {
+        currentIndex--;
+        renderCarousel();
+      });
    
     document.querySelectorAll(".btn-agregar-carrito").forEach(btn => {
       btn.addEventListener("click", () => {
         agregarAlCarrito(btn.dataset.id);
-        alert("Producto agregado al carrito");
         actualizarContador();
       });
     });
@@ -129,7 +167,7 @@ function cargarCarrito() {
       carrito.splice(index, 1);
       localStorage.setItem("carrito", JSON.stringify(carrito));  
       cargarCarrito(); 
-      actualizarContador(); r
+      actualizarContador(); 
     });
     tdEliminar.appendChild(btnEliminar);
 
@@ -194,5 +232,5 @@ function validarForm(form) {
     });
 }
 
-
 document.querySelectorAll("form").forEach(form => validarForm(form));
+
