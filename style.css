@@ -543,14 +543,14 @@ button{
     .carrousel-track {
         overflow: hidden;
         width: 16em; /* 1 tarjeta en móviles */
-        height: 30em
+        height: 55em
     }
     .producto-card p {
         font-size: 10px;
     }
     .producto-card {
         width: 16em;
-        max-height: 30em
+        max-height: 55em
     }
     .item.center{
     transform: translate(-50%, -50%) scale(1);
