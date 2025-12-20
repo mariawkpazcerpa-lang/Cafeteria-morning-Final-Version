@@ -503,5 +503,19 @@ button{
     .carrousel-track {
     width: 23em; /* 1 tarjeta en móviles */
   }
+    .item.center{
+    transform: translate(-50%, -50%) scale(1);
+    display: flex;
+    opacity: 1;
+    z-index: 3;
+    }
+    .item.left{
+        transform: translate(-150%, -50%) scale(0.8);
+        opacity: 0.4;
+    }
+    .item.right{
+        transform: translate(50%, -50%) scale(0.8);
+        opacity: 0.4;
+    }
 
 }
