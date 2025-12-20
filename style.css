@@ -415,6 +415,14 @@ button{
 /* 🔑 MEDIA QUERY PARA PANTALLAS PEQUEÑAS (Móviles)          */
 /* ========================================================= */
 @media only screen and (max-width: 600px){
+    body {
+      margin: 0;              /* elimina márgenes por defecto */
+      padding: 0;
+      display: flex;
+      flex-direction: column; /* header arriba, contenido abajo */
+      align-items: center;    /* centra todo horizontalmente */
+    }
+
     .Contact{
         padding: 15px 10px;
     }
@@ -476,8 +484,8 @@ button{
     .Inicio{
     background-image: url(header.png) ;
     background-size: cover;
-    position: relative;
-    display: flex;
+    position: absolute;
+    display: absolute;
     width: 100%;
     height: 800px;
     background-position: center;
@@ -495,7 +503,6 @@ button{
         height: 15 px;
         font-size: 10 px;
      }
-
     #carrito{
         width: 90%;
         right: 5%;
