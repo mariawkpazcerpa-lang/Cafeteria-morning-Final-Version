@@ -480,6 +480,10 @@ button{
         text-align: center;
         max-width: 280px;
     }
+    header{
+      width: 100%;              /* asegura que el header cubra todo */
+    }
+
      .Inicio{
         background-image: url("header.png");
         background-size: cover;
@@ -498,37 +502,44 @@ button{
     html, body {
         margin: 0;
         padding: 0;
-        width:100%;
+        width: 100%;
         min-height: 100vh;  
         display: flex;
         flex-direction: column; 
         align-items: center;
         justify-content: flex-start
     }
+    body {
+        width: 100%;
+    }
     .MENU {
-        widht:100%;
-        height: 30 px; 
+        widht: 100%;
+        height: 30px; 
         padding: 0 10px;
     }
     .MENU button, .MENU summary {
-        height: 15 px;
-        font-size: 10 px;
+        height: 15px;
+        font-size: 10px;
      }
     #carrito{
         width: 90%;
         right: 5%;
     }
     .Products{
-        max-width: 100%;
+        width: 100%;            
+        max-width: 1200px;
+        margin: 0 auto; 
     }
     .carrousel {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1em; /* espacio entre flechas y track */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;                  
+        width: 100%;               
+        max-width: 1200px;    
+        margin: 0 auto;
     }
-
     .carrousel-track {
         overflow: hidden;
         width: 16em; /* 1 tarjeta en móviles */
