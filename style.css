@@ -482,18 +482,19 @@ button{
     }
 
     .Inicio{
-    background-image: url(header.png) ;
-    background-size: cover;
-    position: absolute;
-    display: absolute;
-    width: 100%;
-    height: 800px;
-    background-position: center;
-    text-align: center;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 80px;
-    overflow: hidden;
+      background-image: url("header.png");
+      background-size: cover;
+      background-position: center;
+      width: 100%;          /* ocupa todo el ancho */
+      height: 800px;        /* alto fijo */
+      display: flex;        /* activa flexbox */
+      align-items: flex-start; /* alinea contenido arriba */
+      justify-content: center; /* centra horizontalmente */
+      text-align: center;
+      padding: 80px;
+      overflow: hidden;
+    }
+
     }
     .MENU {
         height: 30 px; 
