@@ -499,6 +499,11 @@ button{
         margin: 0;
         padding: 0;
         width:100%;
+        min-height: 100vh;  
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start
     }
     .MENU {
         widht:100%;
@@ -513,9 +518,20 @@ button{
         width: 90%;
         right: 5%;
     }
+    .carrousel {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em; /* espacio entre flechas y track */
+    }
+
     .carrousel-track {
-    overflow: hidden;
-    width: 23em; /* 1 tarjeta en móviles */
+        overflow: hidden;
+        width: 16em; /* 1 tarjeta en móviles */
+    }
+    .producto-card {
+        width: 16em;
     }
     .item.center{
     transform: translate(-50%, -50%) scale(1);
