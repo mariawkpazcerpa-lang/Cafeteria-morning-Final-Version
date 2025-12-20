@@ -501,8 +501,9 @@ button{
         right: 5%;
     }
     .carrousel-track {
+    overflow: hidden;
     width: 23em; /* 1 tarjeta en móviles */
-  }
+    }
     .item.center{
     transform: translate(-50%, -50%) scale(1);
     display: flex;
