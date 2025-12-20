@@ -480,21 +480,25 @@ button{
         text-align: center;
         max-width: 280px;
     }
-
-    .Inicio{
-      background-image: url("header.png");
-      background-size: cover;
-      background-position: center;
-      width: 100%;          /* ocupa todo el ancho */
-      height: 800px;        /* alto fijo */
-      display: flex;        /* activa flexbox */
-      align-items: flex-start; /* alinea contenido arriba */
-      justify-content: center; /* centra horizontalmente */
-      text-align: center;
-      padding: 80px;
-      overflow: hidden;
+     .Inicio{
+        background-image: url("header.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;          /* ocupa todo el ancho */
+        height: 800px;        /* alto fijo */
+        display: flex;        /* activa flexbox */
+        align-items: flex-start; /* alinea contenido arriba */
+        justify-content: center; /* centra horizontalmente */
+        text-align: center;
+        padding: 80px;
+        overflow: hidden;
     }
 
+   
+    html, body {
+        margin: 0;
+        padding: 0;
+        width:100%;
     }
     .MENU {
         height: 30 px; 
