@@ -102,10 +102,10 @@ Este proyecto se publica bajo la Licencia MIT. Consulta el archivo `LICENSE` par
 
 ---
 
-## Autor / Contacto
-- Maria — @mariawkpazcerpa-lang  
-(Para cambios en producción o despliegue, indicá la rama y los permisos necesarios para hacer commits.)
-
+##📬 Contacto & Redes
+Desarrolladora: María de la Paz Cerpa
+Email: mariawkpazcerpa@gmail.com
+LinkedIn: María de la Paz Cerpa
 ---
 
 Notas:
